@@ -1,0 +1,2 @@
+src/*/*/*.js
+--require=babel-core/register
