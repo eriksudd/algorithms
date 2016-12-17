@@ -49,7 +49,7 @@ describe('PrimeMover', () => {
     { val: 1, res: 2 },
   ];
   testCases.forEach((testCase) => {
-    it('should return true for a prime number', () => {
+    it('should return the numth prime number', () => {
       expect(PrimeMover(testCase.val)).toBe(testCase.res);
     });
   });
