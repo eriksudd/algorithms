@@ -24,13 +24,13 @@ const ArithGeoII = (arr) => {
   let arith = arr[1] - arr[0];
   let geo = arr[1] / arr[0];
 
-  arr.forEach((el, i) => {
-    const nextEl = arr[i + 1];
-    if (nextEl && nextEl - el !== arith) {
+  arr.forEach((curr, i) => {
+    const next = arr[i + 1];
+    if (next && next - curr !== arith) {
       arith = false;
     }
 
-    if (nextEl && nextEl / el !== geo) {
+    if (next && next / curr !== geo) {
       geo = false;
     }
   });
